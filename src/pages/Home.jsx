@@ -13,11 +13,11 @@ export default function Home({ addToCart, cart, setIsCartOpen }) {
     if (!token) {
       navigate("/login");
     } else {
-      setIsAuthChecked(true); // Only render after auth is confirmed
+      setIsAuthChecked(true); 
     }
   }, [navigate]);
 
-  // While checking auth, render nothing
+
   if (!isAuthChecked) return null;
 
   // Logout function
