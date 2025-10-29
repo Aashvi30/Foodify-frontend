@@ -35,7 +35,7 @@ export default function Signup() {
 
     try {
       // Send signup data to backend
-      const res = await axios.post("http://foodify-backend2.vercel.app/api/auth/signup", {
+      const res = await axios.post("https://foodify-backend2.vercel.app/api/auth/signup", {
         name,
         email,
         password,
